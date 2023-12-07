@@ -7,5 +7,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/ca
 WORKDIR /var/www/html
 RUN unzip carvilla.zip
 RUN cp -rvf carvilla-v1.0/* .
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 EXPOSE 80 
